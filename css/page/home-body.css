@@ -92,19 +92,15 @@ li {
  文章图片模块
  */
 .article-title-img-model {
-    width: 120px;
-    min-width: 120px;
-    max-width: 300px;
     height: 30px;
     line-height: 30px;
-    border-right: 1px solid #ccc;
 }
 
 /*
  文章图片
  */
 .article-title-img {
-    width: 50px;
+    width: 30px;
     height: 30px;
     border-radius: 50%;
 }
@@ -115,4 +111,31 @@ li {
 .article-title-user {
     margin: auto 0px;
     vertical-align: middle;
+}
+
+/*
+   分割线
+ */
+.interval{
+    width: 1px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
+
+/*
+  时间
+ */
+.article-time{
+    margin: 7px 2px;
+    color: #aaa;
+}
+
+/*
+  文章信息
+ */
+.article-message{
+    display: flex;
+    justify-content: space-between;
 }
