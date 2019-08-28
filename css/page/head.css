@@ -1,0 +1,85 @@
+/*
+ 页面内容
+ */
+body {
+    width: 100%;
+    min-width: 1116px;
+}
+
+/*
+ 导航栏外部
+ */
+.bg-toolbar {
+    min-width: 1200px;
+    height: 40px;
+    padding: 0 23%;
+    background-color: white;
+}
+
+/**
+   导航栏内部
+ */
+.bg-toolbar-container {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+/**
+   分类导航栏
+ */
+.nav-sort-toolbar {
+    margin-top: 10px;
+    width: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+/*
+ 导航栏下划线
+ */
+li {
+    margin: 0 10px;
+    font-size: 1.1em;
+    padding: 10px 0;
+    list-style-type: none
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #000;
+}
+
+li:hover:before {
+    width: 100%;
+}
+
+/*
+ 博客搜索栏
+ */
+.bg-search {
+    display: block;
+    height: 30px;
+    margin: 5px 5px 5px 100px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+/**
+  内容模块
+ */
+.bg-content-model{
+    margin: 0 30%;
+}
+
+/**
+ 布局
+ */
+.display {
+    display: flex;
+}

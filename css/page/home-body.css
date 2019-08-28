@@ -1,0 +1,118 @@
+/*
+ 页面内容
+ */
+body {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f5f6f7;
+    min-width: 1200px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+
+/**
+  整体内容模块
+ */
+.bg-content-model {
+    display: flex;
+    padding: 0 20%;
+}
+
+/**
+  分类导航栏
+ */
+.bg-content-sort {
+    min-width: 150px;
+    width: 150px;
+}
+
+/**
+  广告模块
+ */
+.bg-content-model-ad {
+    margin: 0 10px 10px;
+    width: 750px;
+    height: 150px;
+}
+
+/**
+  广告图片
+ */
+.bg-content-model-ad-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/**
+  文章外模块
+ */
+.bg-content-model-article {
+    margin: 0 10px;
+    border: 1px solid #eee;
+}
+
+/*
+  文章内模块
+ */
+.model-article {
+    width: 750px;
+    height: 130px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+
+/*
+ 文章标题
+ */
+.article-title {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.article-introduction{
+    margin: 5px 0;
+}
+
+
+/*
+ 文章图片模块
+ */
+.article-title-img-model {
+    width: 120px;
+    min-width: 120px;
+    max-width: 300px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #ccc;
+}
+
+/*
+ 文章图片
+ */
+.article-title-img {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/*
+  文章作者
+ */
+.article-title-user {
+    margin: auto 0px;
+    vertical-align: middle;
+}
