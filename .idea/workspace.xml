@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/page/model/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/page/model/head.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/page/model/home-body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/model/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/model/home-body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/home-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/home-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home-body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/model/head.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/home-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/model/home-body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/model/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/home-body.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,27 +37,30 @@
   </component>
   <component name="ProjectId" id="1Q2HSDaGSbIchvRtVT1lOBlJkEl" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/ad" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Blog\blogClient" />
-      <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
-      <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\Blog\blogClient\images\ad" />
       <recent name="D:\Git\Blog\blogClient\images\search" />
       <recent name="D:\Git\Blog\blogClient\images\logo" />
       <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
+      <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Blog\clients\css\page\model" />
+      <recent name="D:\Git\Blog\clients\js\page\model" />
+      <recent name="D:\Git\Blog\clients\page\model" />
+      <recent name="D:\Git\Blog\blogClient" />
       <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
     </key>
   </component>
@@ -63,29 +76,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.home.html">
     <configuration name="head.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/head.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="head.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blogClient/page/head.html" useBuiltInWebServerPort="true">
+    <configuration name="head.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/model/head.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="home-body.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blogClient/page/home-body.html" useBuiltInWebServerPort="true">
+    <configuration name="home-body.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/model/home-body.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blogClient/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="JavaScript Debug.head.html (2)" />
+        <item itemvalue="JavaScript Debug.home-body.html (1)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.head.html (1)" />
-        <item itemvalue="JavaScript Debug.home-body.html" />
-        <item itemvalue="JavaScript Debug.head.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +126,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -3,17 +3,14 @@
  */
 body {
     width: 100%;
-    min-width: 1116px;
+    min-width: 1200px;
 }
 
 /*
  导航栏外部
  */
 .bg-toolbar {
-    min-width: 1200px;
-    height: 40px;
     padding: 0 23%;
-    background-color: white;
 }
 
 /**
@@ -68,6 +65,7 @@ li:hover:before {
     padding: 3px 10px 3px 10px;
     border: 1px solid #CCC;
     border-radius: 4px;
+    color:#bbb;
 }
 
 /**

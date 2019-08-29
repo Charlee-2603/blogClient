@@ -1,0 +1,45 @@
+/*
+ 页面内容
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    background-color: #f5f6f7;
+    overflow: hidden;
+}
+
+/*
+  头部模块
+ */
+.iframe-head {
+    width: 100%;
+    min-width: 1200px;
+    height: 40px;
+    border: none;
+}
+
+/*
+   内容模块
+ */
+.iframe-body {
+    width: 100%;
+    height: 90%;
+}
+
+/*
+  底部模块
+ */
+.iframe-footer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 50px;
+    border: none;
+}

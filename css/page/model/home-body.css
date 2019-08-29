@@ -1,9 +1,9 @@
 /*
  页面内容
  */
-body {
-    margin-top: 10px;
+html,body {
     width: 100%;
+    height: 90%;
     background-color: #f5f6f7;
     min-width: 1200px;
 }
@@ -18,6 +18,7 @@ li {
     background-color: white;
     width: 100%;
     padding: 10px 0px;
+    margin: 4px 0px;
 }
 
 
@@ -26,24 +27,32 @@ li {
  */
 .bg-content-model {
     display: flex;
-    padding: 0 20%;
+    padding: 0 22%;
 }
 
 /**
   分类导航栏
  */
 .bg-content-sort {
+    position: fixed;
     min-width: 150px;
     width: 150px;
+}
+
+/*
+  广告文章整合模块
+ */
+.bg-content-two{
+    margin: 4px 0px 0 160px;
 }
 
 /**
   广告模块
  */
 .bg-content-model-ad {
-    margin: 0 10px 10px;
-    width: 750px;
+    width: 751px;
     height: 150px;
+    margin-bottom: 5px;
 }
 
 /**
@@ -59,7 +68,7 @@ li {
   文章外模块
  */
 .bg-content-model-article {
-    margin: 0 10px;
+
     border: 1px solid #eee;
 }
 
@@ -70,8 +79,8 @@ li {
     width: 750px;
     height: 130px;
     background-color: white;
-    border-bottom: 1px solid #eee;
     padding: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 /*
@@ -83,7 +92,10 @@ li {
     font-weight: bold;
 }
 
-.article-introduction{
+/**
+  文章简介
+ */
+.article-introduction {
     margin: 5px 0;
 }
 
@@ -116,7 +128,7 @@ li {
 /*
    分割线
  */
-.interval{
+.interval {
     width: 1px;
     height: 12px;
     border-radius: 50%;
@@ -127,15 +139,32 @@ li {
 /*
   时间
  */
-.article-time{
-    margin: 7px 2px;
+.article-time {
+    line-height: 34px;
+    color: #aaa;
+}
+
+/*
+  阅读数
+ */
+.article-readCount {
+    line-height: 34px;
     color: #aaa;
 }
 
 /*
   文章信息
  */
-.article-message{
+.article-message {
     display: flex;
     justify-content: space-between;
+    line-height: 34px;
+}
+
+/*
+  选中
+ */
+.active {
+    background-color: red;
+    color: white;
 }
