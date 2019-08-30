@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/page/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/article.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/model/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/model/head.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/model/home-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/model/head.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/model/home-body.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/model/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/model/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/model/home-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/article.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +106,7 @@
       <workItem from="1566961774360" duration="15677000" />
       <workItem from="1566979017339" duration="10098000" />
       <workItem from="1566996616138" duration="9200000" />
-      <workItem from="1567079468292" duration="34510000" />
+      <workItem from="1567079468292" duration="37191000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567078850391</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="页面动态化">
+      <created>1567162195190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567162195190</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
