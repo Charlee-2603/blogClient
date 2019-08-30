@@ -3,17 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/page/home.css">
     <script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/api/api.js"></script>
     <script type="text/javascript" src="../js/page/home.js"></script>
-
 </head>
 <body>
-    <iframe frameborder="0" scrolling="no" class="iframe-head" src="model/head.html"></iframe>
-    <iframe frameborder="0" scrolling="auto" class="iframe-body" src="model/home-body.html"></iframe>
-    <iframe frameborder="0" scrolling="no" class="iframe-footer" src="model/footer.html"/>
+<!--顶部导航栏-->
+<div id="bg-toolbar" class="bg-toolbar">
+    <div class="bg-toolbar-container display">
+
+        <!-- logo -->
+        <div>
+            <img id="bg-nav-logo" onclick="clickLogo()">
+        </div>
+
+        <!-- 顶部导航栏 -->
+        <div>
+            <ul id="bg-nav-ul" class="nav nav-pills"></ul>
+        </div>
+
+        <!-- 搜索框 -->
+        <div>
+            <input type="text" class="bg-search" value="java工程师">
+        </div>
+
+        <!-- 工具栏 -->
+        <div>
+            <ul class="nav nav-pills">
+                <li>写博客</li>
+                <li>消息</li>
+                <li>登录</li>
+                <li>注册</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 中间栏 -->
+<div class="body-model">
+    <!-- 分类导航栏 -->
+    <div class="bg-nav-sort">
+        <ul>
+            <div class="bg-sort-model" id="id-sortNav-model"></div>
+        </ul>
+    </div>
+
+    <!--文章主体 -->
+    <iframe name="iframeBody" class="body-model-ContentBody-iframe" frameborder="0" scrolling="no"
+            src="article.html">
+    </iframe>
+</div>
+
+<!--&lt;!&ndash;底部栏 &ndash;&gt;-->
+<!--<div class="text-center">-->
+<!--    <p style="margin: 5px 0">Copyright &copy; 2019 HunterGroup. All Rights Reserved.</p>-->
+<!--    <p>陈亮 版权所有</p>-->
+<!--</div>-->
 </body>
-<script type="text/javascript" src="../js/page/model/head.js"></script>
-<script type="text/javascript" src="../js/page/model/home-body.js"></script>
 </html>

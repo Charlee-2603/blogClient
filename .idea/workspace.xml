@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/page/model/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/page/model/head.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/page/model/home-body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/model/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/model/home-body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/page/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/model/head.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/home-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/model/home-body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/model/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/home-body.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/model/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/model/head.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/model/home-body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/model/head.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/model/home-body.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/model/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/model/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/model/home-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/article.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,21 +45,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Blog\clients\css\page" />
+      <recent name="D:\Git\Blog\clients\js\page" />
+      <recent name="D:\Git\Blog\clients\page" />
+      <recent name="D:\Git\Blog\clients\css\page\model" />
+      <recent name="D:\Git\Blog\clients\js\page\model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\Blog\blogClient\images\ad" />
       <recent name="D:\Git\Blog\blogClient\images\search" />
       <recent name="D:\Git\Blog\blogClient\images\logo" />
       <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
-      <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Blog\clients\css\page\model" />
-      <recent name="D:\Git\Blog\clients\js\page\model" />
-      <recent name="D:\Git\Blog\clients\page\model" />
-      <recent name="D:\Git\Blog\blogClient" />
       <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
     </key>
   </component>
@@ -77,13 +77,10 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.home.html">
+    <configuration name="article.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/article.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="head.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/head.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="head.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/model/head.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="home-body.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/model/home-body.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/home.html" useBuiltInWebServerPort="true">
@@ -92,11 +89,13 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="oooo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/oooo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.home.html" />
-        <item itemvalue="JavaScript Debug.head.html (2)" />
-        <item itemvalue="JavaScript Debug.home-body.html (1)" />
+        <item itemvalue="JavaScript Debug.oooo.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.head.html (1)" />
       </list>
@@ -115,7 +114,16 @@
       <workItem from="1566961774360" duration="15677000" />
       <workItem from="1566979017339" duration="10098000" />
       <workItem from="1566996616138" duration="9200000" />
+      <workItem from="1567079468292" duration="34510000" />
     </task>
+    <task id="LOCAL-00001" summary="页面动态化">
+      <created>1567078850391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567078850391</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,5 +141,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="页面动态化" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面动态化" />
   </component>
 </project>

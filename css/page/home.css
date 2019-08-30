@@ -1,45 +1,148 @@
-/*
- 页面内容
- */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html,body {
+html, body {
+    min-width: 1200px;
     width: 100%;
     height: 100%;
-    min-width: 1200px;
-    background-color: #f5f6f7;
-    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+/**
+ 布局
+ */
+.display {
+    display: flex;
+}
+
+/**
+  选中样式
+ */
+.active {
+    color: red;
+}
+
+.sortActive {
+    color: white;
+    background-color: red;
+    padding: 10px 0;
 }
 
 /*
-  头部模块
+  顶部导航栏模块
  */
-.iframe-head {
+.bg-toolbar {
     width: 100%;
+    padding: 0 23%;
+}
+
+/**
+   顶部导航栏内部
+ */
+.bg-toolbar-container {
     min-width: 1200px;
-    height: 40px;
-    border: none;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
 }
 
 /*
-   内容模块
+  顶部导航栏li
  */
-.iframe-body {
+#bg-toolbar > div > div > ul > li {
+    margin: 0 10px;
+    font-size: 1.1em;
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+#bg-toolbar > div > div > ul > li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid red;
+}
+
+#bg-toolbar > div > div > ul > li:hover:before {
     width: 100%;
-    height: 90%;
+}
+
+/**
+ 分类导航栏li
+ */
+#id-sortNav-model > li {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 2px 0;
+}
+
+/**
+ 分类导航栏li
+ */
+#id-sortNav-model > li:hover {
+    list-style-type: none;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 2px 0;
+    background-color: red;
+    color: white;
 }
 
 /*
-  底部模块
+  顶部导航栏搜索栏
  */
-.iframe-footer {
+.bg-search {
+    display: block;
+    height: 30px;
+    margin: 5px 5px 5px 100px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    color: #bbb;
+}
+
+/**
+   中间模块
+ */
+.body-model {
+    display: flex;
+    padding: 0 20%;
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    background: #f5f6f7;
+}
+
+
+/**
+  分类导航栏模块
+ */
+.bg-sort-model {
+    margin: 10px 10px;
+    width: 100px;
+    height: 100%;
+    background-color: white;
+}
+
+
+/**
+  分类导航栏
+ */
+.bg-nav-sort {
     position: fixed;
-    width: 100%;
+}
+
+/*
+  内容模块
+ */
+.body-model-ContentBody-iframe {
+    margin: 10px 0 0 160px;
+    width: 750px;
     height: 100%;
-    min-width: 1200px;
-    min-height: 50px;
-    border: none;
+
 }
