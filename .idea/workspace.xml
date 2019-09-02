@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/article.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/article.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/article.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,9 +72,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.home.html">
-    <configuration name="article.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/article.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="head.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/head.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -84,9 +84,13 @@
     <configuration name="oooo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/oooo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="home.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="home.js" working-dir="$PROJECT_DIR$/js/page">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="Node.js.home.js" />
         <item itemvalue="JavaScript Debug.oooo.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.head.html (1)" />
@@ -107,6 +111,7 @@
       <workItem from="1566979017339" duration="10098000" />
       <workItem from="1566996616138" duration="9200000" />
       <workItem from="1567079468292" duration="37191000" />
+      <workItem from="1567162007499" duration="27005000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>

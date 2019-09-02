@@ -1,13 +1,13 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 html, body {
     display: block;
-    min-width: 1200px;
     width: 100%;
+    min-width: 1200px;
     height: 100%;
 }
 
@@ -82,7 +82,7 @@ ul {
 #id-sortNav-model > li {
     list-style-type: none;
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin: 2px 0;
 }
 
@@ -92,7 +92,7 @@ ul {
 #id-sortNav-model > li:hover {
     list-style-type: none;
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin: 2px 0;
     background-color: red;
     color: white;
@@ -116,12 +116,10 @@ ul {
  */
 .body-model {
     display: flex;
-    padding: 0 20%;
+    position: relative;
+    padding: 0 23%;
     background: #f5f6f7;
-    min-width: 1200px;
     width: 100%;
-    height: 200%;
-    min-height: 100%;
 }
 
 
@@ -129,22 +127,141 @@ ul {
   分类导航栏模块
  */
 .bg-sort-model {
-    margin: 10px 50px;
+    display: block;
+    position: absolute;
+    top: 10px;
     width: 100px;
     background-color: white;
 }
 
+/**
+  文章模块
+ */
+.article-model {
+    margin: 11px 0 20px 110px;
+    width: 750px;
+}
 
 /**
-  分类导航栏
+  广告模块
  */
-.bg-nav-sort {
-    position: fixed;
+.bg-content-model-ad {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+/**
+  广告图片
+ */
+.bg-content-model-ad-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/**
+  文章外模块
+ */
+.bg-content-model-article {
+    border: 1px solid #eee;
 }
 
 /*
-  内容模块
+  文章内模块
  */
-.body-model-ContentBody-iframe {
-    margin: 10px 0 0 160px;
+.model-article {
+    width: 750px;
+    height: 130px;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ 文章标题
+ */
+.article-title {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/**
+  文章简介
+ */
+.article-introduction {
+    margin: 5px 0;
+}
+
+
+/*
+ 文章图片模块
+ */
+.article-title-img-model {
+    height: 30px;
+    line-height: 30px;
+}
+
+/*
+ 文章图片
+ */
+.article-title-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+/*
+  文章作者
+ */
+.article-title-user {
+    margin: auto 5px;
+    vertical-align: middle;
+}
+
+/*
+ 分割线
+ */
+.interval {
+    width: 1px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
+
+/*
+  时间
+ */
+.article-time {
+    line-height: 34px;
+    color: #aaa;
+}
+
+/*
+  阅读数
+ */
+.article-readCount {
+    text-decoration: none;
+    line-height: 34px;
+    color: #aaa;
+}
+
+/*
+  文章信息
+ */
+.article-message {
+    display: flex;
+    justify-content: space-between;
+    line-height: 34px;
 }
