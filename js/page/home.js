@@ -4,11 +4,17 @@ let logoImgUrl;
 // 顶部导航栏列表
 let navBarList;
 
+//顶部导航栏按钮
+let navBarListBtn;
+
 // 分类导航栏列表
 let sortNavBarList;
 
-// 选中的导航栏下标
+// 选中的导航栏列表下标
 let selectedNavIndex = 0;
+
+// 选中的导航栏按钮下标
+let selectedNavBtnIndex = 0;
 
 // 广告
 let adInfo;
@@ -78,15 +84,18 @@ function setHead() {
     // 设置logo
     setLogo();
 
-    // 设置列表
+    // 设置顶部导航栏列表
     setNavBar();
+
+    // 设置顶部导航栏按钮
+    setNavBarBtn();
 }
 
 /**
  * 设置中间内容
  */
 function setBody() {
-    //设置分类导航栏信息
+    //设置分类导航栏列表
     setSortNav();
 
     // 设置广告栏
@@ -113,12 +122,20 @@ function setHtml() {
             let data = JSON.parse(e);
             // 设置logo
             logoImgUrl = data.logoImgUrl[0].frontValue;
+
             // 设置顶部导航栏
             navBarList = data.navBarList;
+
+            // 设置顶部导航栏按钮
+            navBarListBtn = data.navBarListBtn;
+            console.log("顶部导航栏按钮：", navBarListBtn);
+
             // 设置分类导航栏
             sortNavBarList = data.sortNavBarList;
+
             // 设置广告地址
             adInfo = data.adInfo;
+
             // 文章列表
             articleList = data.articleList;
             console.log("文章列表", articleList);
@@ -153,15 +170,31 @@ function setNavBar() {
         $li.attr("value", i);
 
         $li.on('click', function () {
-            console.log("点击位置：" + i);
-            console.log("隐藏位置：" + selectedNavIndex);
             $("#id-nav-li" + selectedNavIndex).attr("class", "");
             $("#id-nav-li" + i).attr("class", "active");
             selectedNavIndex = i;
-            $("#iframeBody").attr("src", navBarList[i].frontValue);
         })
     }
 
+}
+
+
+/**
+ * 设置顶部导航栏按钮
+ */
+function setNavBarBtn() {
+    for (let i = 0; i < navBarListBtn.length; i++) {
+        let $li = $("<li id='id-nav-btn'></li>");
+        $("#bg-nav-btn").append($li);
+        $li.attr("id", "id-nav-btn" + i);
+
+        $li.text(navBarListBtn[i].frontName);
+        $li.attr("value", i);
+
+        $li.on('click', function () {
+            window.location = navBarListBtn[i].frontValue;
+        })
+    }
 }
 
 /**

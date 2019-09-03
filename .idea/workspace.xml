@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/page/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ad/Renting.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/page/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/article.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/article.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/article.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,25 +38,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/ad" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Blog\clients\images\ad" />
+      <recent name="D:\Git\Blog\blogClient\images\ad" />
+      <recent name="D:\Git\Blog\blogClient\images\search" />
+      <recent name="D:\Git\Blog\blogClient\images\logo" />
+      <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Git\Blog\clients\css\page" />
       <recent name="D:\Git\Blog\clients\js\page" />
       <recent name="D:\Git\Blog\clients\page" />
       <recent name="D:\Git\Blog\clients\css\page\model" />
       <recent name="D:\Git\Blog\clients\js\page\model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Git\Blog\blogClient\images\ad" />
-      <recent name="D:\Git\Blog\blogClient\images\search" />
-      <recent name="D:\Git\Blog\blogClient\images\logo" />
-      <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
-      <recent name="D:\Git\Blog\blogClient\js\bootstrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -71,14 +71,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.home.html">
-    <configuration name="head.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/head.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.login.html">
     <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="oooo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/oooo.html" useBuiltInWebServerPort="true">
@@ -89,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.home.html" />
         <item itemvalue="Node.js.home.js" />
         <item itemvalue="JavaScript Debug.oooo.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="JavaScript Debug.head.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +111,8 @@
       <workItem from="1566979017339" duration="10098000" />
       <workItem from="1566996616138" duration="9200000" />
       <workItem from="1567079468292" duration="37191000" />
-      <workItem from="1567162007499" duration="27005000" />
+      <workItem from="1567162007499" duration="27339000" />
+      <workItem from="1567426647473" duration="15272000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567162195190</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="文章渲染功能完成">
+      <created>1567426323113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567426323113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="页面动态化" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面动态化" />
+    <MESSAGE value="文章渲染功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="文章渲染功能完成" />
   </component>
 </project>

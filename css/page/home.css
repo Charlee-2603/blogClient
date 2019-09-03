@@ -77,6 +77,14 @@ ul {
 }
 
 /**
+ 顶部导航栏按钮li
+ */
+#bg-nav-btn > li:hover {
+    color: red;
+}
+
+
+/**
  分类导航栏li
  */
 #id-sortNav-model > li {
@@ -104,8 +112,8 @@ ul {
 .bg-search {
     display: block;
     height: 30px;
-    margin: 5px 5px 5px 100px;
-    padding: 3px 10px 3px 10px;
+    margin: 6px 20px 0;
+    padding: 0 10px 3px 10px;
     border: 1px solid #CCC;
     border-radius: 4px;
     color: #bbb;
