@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/page/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ad/Renting.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/page/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/login.html" afterDir="false" />
+    <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="顶部导航栏按钮修改成动态">
+      <change afterPath="$PROJECT_DIR$/page/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page/write.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
+  <component name="RunManager" selected="JavaScript Debug.home.html">
     <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -89,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="Node.js.home.js" />
         <item itemvalue="JavaScript Debug.oooo.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
@@ -112,7 +112,10 @@
       <workItem from="1566996616138" duration="9200000" />
       <workItem from="1567079468292" duration="37191000" />
       <workItem from="1567162007499" duration="27339000" />
-      <workItem from="1567426647473" duration="15272000" />
+      <workItem from="1567426647473" duration="17074000" />
+      <workItem from="1567594564740" duration="1360000" />
+      <workItem from="1567603319155" duration="633000" />
+      <workItem from="1568015130989" duration="11707000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>
@@ -135,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567426323113</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="顶部导航栏按钮修改成动态">
+      <created>1567514109230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567514109230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="页面动态化" />
     <MESSAGE value="文章渲染功能完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="文章渲染功能完成" />
+    <MESSAGE value="顶部导航栏按钮修改成动态" />
+    <option name="LAST_COMMIT_MESSAGE" value="顶部导航栏按钮修改成动态" />
   </component>
 </project>

@@ -4,6 +4,9 @@ let logoImgUrl;
 // 顶部导航栏列表
 let navBarList;
 
+// 顶部导航栏ID
+let navBarId;
+
 //顶部导航栏按钮
 let navBarListBtn;
 
@@ -12,6 +15,9 @@ let sortNavBarList;
 
 // 选中的导航栏列表下标
 let selectedNavIndex = 0;
+
+// 分类栏目id
+let sortNavId = 10;
 
 // 选中的导航栏按钮下标
 let selectedNavBtnIndex = 0;
@@ -116,28 +122,31 @@ function setHtml() {
         async: false,
         data: {
             pageIndex: pageIndex,
-            pageSize: pageSize
+            pageSize: pageSize,
+            frontId: navBarId,
+            sortNavId: sortNavId
         },
         success: function (e) {
-            let data = JSON.parse(e);
+            let res = JSON.parse(e);
+            console.log(res);
             // 设置logo
-            logoImgUrl = data.logoImgUrl[0].frontValue;
+            logoImgUrl = res.data.logoImgUrl[0].frontValue;
 
             // 设置顶部导航栏
-            navBarList = data.navBarList;
+            navBarList = res.data.navBarList;
 
             // 设置顶部导航栏按钮
-            navBarListBtn = data.navBarListBtn;
-            console.log("顶部导航栏按钮：", navBarListBtn);
+            navBarListBtn = res.data.navBarListBtn;
 
             // 设置分类导航栏
-            sortNavBarList = data.sortNavBarList;
+            sortNavBarList = res.data.sortNavBarList;
+            console.log("分类导航栏：", sortNavBarList);
 
             // 设置广告地址
-            adInfo = data.adInfo;
+            adInfo = res.data.adInfo;
 
             // 文章列表
-            articleList = data.articleList;
+            articleList = res.data.articleList;
             console.log("文章列表", articleList);
         }
     })
@@ -162,20 +171,29 @@ function setNavBar() {
         $("#bg-nav-ul").append($li);
         $li.attr("id", "id-nav-li" + i);
 
-        if (i == selectedNavIndex) {
-            $li.attr("class", "active");
+        // 判断是否已登录，登陆了隐藏登录注册按钮
+        let user = window.localStorage.getItem("user");
+        if (user == null) {
+            // 未登录  显示登录注册按钮
+            if (i == selectedNavIndex) {
+                $li.attr("class", "active");
+            }
+
+            $li.text(navBarList[i].frontName);
+            $li.attr("value", navBarList[i].frontId);
+
+            $li.on('click', function () {
+                $("#id-nav-li" + selectedNavIndex).attr("class", "");
+                $("#id-nav-li" + i).attr("class", "active");
+                navBarId = $li.val();
+                console.log("navBarId", navBarId);
+                selectedNavIndex = i;
+            })
+        } else {
+            // 登录 隐藏登录注册按钮  显示头像按钮
+
         }
-
-        $li.text(navBarList[i].frontName);
-        $li.attr("value", i);
-
-        $li.on('click', function () {
-            $("#id-nav-li" + selectedNavIndex).attr("class", "");
-            $("#id-nav-li" + i).attr("class", "active");
-            selectedNavIndex = i;
-        })
     }
-
 }
 
 
@@ -202,12 +220,11 @@ function setNavBarBtn() {
  */
 function setSortNav() {
     console.log(sortNavBarList);
-
     $.each(sortNavBarList, function (i, val) {
         // 导航栏名称
         let name = sortNavBarList[i].frontName;
-        // 导航栏链接
-        let value = sortNavBarList[i].frontValue;
+        // 导航栏Id
+        let Id = sortNavBarList[i].frontId;
 
         let $li = $("<li id='id-sortNav-li'></li>");
         $("#id-sortNav-model").append($li);
@@ -220,16 +237,23 @@ function setSortNav() {
 
         // 设置名称
         $li.text(name);
+
         // 给每个li赋值编号
-        $li.attr("value", i);
+        $li.attr("value", Id);
 
         $li.on('click', function () {
             $("#id-sortNav-li" + selectedSortNavIndex).attr("class", "");
             $("#id-sortNav-li" + i).attr("class", "sortActive");
+            sortNavId = Id;
             selectedSortNavIndex = i;
-            $("#iframeBody").attr("src", value);
+            console.log("sortNavId", sortNavId);
+            $("#bg-content-model-article").empty();
+            pageIndex = 1;
+            setHtml();
+            setArticle();
         })
     });
+
 }
 
 /**
@@ -339,6 +363,7 @@ function subString(str, key) {
     } else if (key == "time") {
         return str.substring(0, 16);
     } else {
-        return "";
+        return str.substring(0, 30) + "...";
+        ;
     }
 }
