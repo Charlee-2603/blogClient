@@ -210,7 +210,7 @@ function setNavBarBtn() {
         $li.attr("value", i);
 
         $li.on('click', function () {
-            window.location = navBarListBtn[i].frontValue;
+            window.open(navBarListBtn[i].frontValue, '_blank');
         })
     }
 }

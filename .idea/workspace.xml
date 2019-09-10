@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="顶部导航栏按钮修改成动态">
-      <change afterPath="$PROJECT_DIR$/page/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page/write.html" afterDir="false" />
+    <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/page/login/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/page/login/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/page/login/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/login/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/login/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/login/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/login/icomoon.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/page/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/write.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +46,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/ad" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css/page/login" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Blog\clients\images" />
+      <recent name="D:\Git\Blog\clients\css\page\home" />
+      <recent name="D:\Git\Blog\clients\css\page\login" />
+      <recent name="D:\Git\Blog\clients\images\img1" />
+      <recent name="D:\Git\Blog\clients\css\page" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Blog\clients\css\page\login" />
+      <recent name="D:\Git\Blog\clients\fonts\login" />
       <recent name="D:\Git\Blog\clients\images\ad" />
       <recent name="D:\Git\Blog\blogClient\images\ad" />
       <recent name="D:\Git\Blog\blogClient\images\search" />
-      <recent name="D:\Git\Blog\blogClient\images\logo" />
-      <recent name="D:\Git\Blog\blogClient\css\bootstrap" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Blog\clients\css\page" />
-      <recent name="D:\Git\Blog\clients\js\page" />
-      <recent name="D:\Git\Blog\clients\page" />
-      <recent name="D:\Git\Blog\clients\css\page\model" />
-      <recent name="D:\Git\Blog\clients\js\page\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -71,17 +79,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.home.html">
+  <component name="RunManager" selected="JavaScript Debug.login.html">
+    <configuration name="1111.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/clients/page/1111.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="demo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/clients/page/demo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/client/page/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/login.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="oooo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/clients/page/oooo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="home.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="home.js" working-dir="$PROJECT_DIR$/js/page">
@@ -89,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.home.html" />
         <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.home.html" />
+        <item itemvalue="JavaScript Debug.1111.html" />
+        <item itemvalue="JavaScript Debug.demo.html" />
         <item itemvalue="Node.js.home.js" />
-        <item itemvalue="JavaScript Debug.oooo.html" />
-        <item itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +123,8 @@
       <workItem from="1567426647473" duration="17074000" />
       <workItem from="1567594564740" duration="1360000" />
       <workItem from="1567603319155" duration="633000" />
-      <workItem from="1568015130989" duration="11707000" />
+      <workItem from="1568015130989" duration="12242000" />
+      <workItem from="1568079147118" duration="22455000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>
@@ -145,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567514109230</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成动态筛选文章">
+      <created>1568033675672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568033675672</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +184,14 @@
     <MESSAGE value="页面动态化" />
     <MESSAGE value="文章渲染功能完成" />
     <MESSAGE value="顶部导航栏按钮修改成动态" />
-    <option name="LAST_COMMIT_MESSAGE" value="顶部导航栏按钮修改成动态" />
+    <MESSAGE value="完成动态筛选文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成动态筛选文章" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
