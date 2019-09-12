@@ -7,3 +7,6 @@ let domain = "/napi";
 var frontUrl = domain + "/sys/front/setHtml";
 var loginUrl = domain + "/sys/login";
 var codeImgUrl = domain + "/sys/code";
+var uType = "/sys/uType";
+var postArticleURL = "/sys/article/post";
+var getArticleLabelURL = "/sys/article/label";

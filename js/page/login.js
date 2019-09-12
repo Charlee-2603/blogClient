@@ -17,9 +17,11 @@ function loginChange() {
             code: $("#code").val()
         },
         success: function (e) {
-            let data = JSON.parse(e);
-            console.log(data);
-            if (data.msg == "success") {
+            let res = JSON.parse(e);
+            console.log(res);
+            if (res.type == "success") {
+                window.localStorage.setItem("tokenId",res.data.token.tokenId);
+                window.localStorage.setItem("uid", res.data.token.uid);
                 $('form').fadeOut(500);
                 $("#accountTitle").text("Welcome");
                 $('.wrapper').addClass('form-success');
@@ -27,7 +29,7 @@ function loginChange() {
                     window.location = "home.html";
                 }, 1500);
             } else {
-                alert(data.msg);
+                alert(res.msg);
             }
         }
     })

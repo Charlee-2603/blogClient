@@ -11,7 +11,7 @@ let navBarId;
 let navBarListBtn;
 
 // 分类导航栏列表
-let sortNavBarList;
+var sortNavBarList;
 
 // 选中的导航栏列表下标
 let selectedNavIndex = 0;
@@ -44,6 +44,9 @@ $(function () {
 
     // 设置头部内容
     setHead();
+
+    // 用户是否登录
+    userIsLogin();
 
     // 设置中间内容
     setBody();
@@ -82,6 +85,30 @@ $(function () {
         }
     });
 });
+
+/**
+ * 判断用户是否登录
+ */
+function userIsLogin() {
+    let uid = window.localStorage.getItem("uid");
+    let tokenId = window.localStorage.getItem("tokenId");
+    let url = uType;
+    let data = {
+        uid: uid,
+        tokenId: tokenId
+    };
+    http(url, "post", true, data, "json", function (res) {
+        console.log("用户登录状态：", JSON.stringify(res));
+        if (res.type == "success") {
+            console.log("用户处于登录状态");
+        } else {
+            console.log("未登录");
+        }
+    }, function (res) {
+        alert("error");
+    })
+}
+
 
 /**
  * 设置头部内容
@@ -210,7 +237,7 @@ function setNavBarBtn() {
         $li.attr("value", i);
 
         $li.on('click', function () {
-            window.open(navBarListBtn[i].frontValue, '_blank');
+            window.location = navBarListBtn[i].frontValue;
         })
     }
 }

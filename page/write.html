@@ -3,23 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>写博客</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/wangeditor/wangEditor.css">
+    <link rel="stylesheet" href="../css/page/write/write.css">
+    <script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/wangEditor/wangEditor.min.js"></script>
+    <script type="text/javascript" src="../js/api/api.js"></script>
+    <script type="text/javascript" src="../js/api/ajax.js"></script>
+    <script type="text/javascript" src="../js/page/write.js"></script>
 </head>
-<body>
+<body style="background-color: #ccc">
 <div>
-    <div>
-        <input type="text" placeholder="请输入文章标题...">
-        <input type="button" value="发布文章">
+    <div class="btn-group" style="margin: 10px 0 0 10%;">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+            请选择文章标签 <span class="caret"></span>
+        </button>
+        <ul id="articleType" class="dropdown-menu" style="z-index: 99999;"></ul>
     </div>
-    <div>
-        <input type="text" placeholder="请对文章进行简单的介绍...">
-    </div>
-    <div>
-        <textarea placeholder="请输入内容..."></textarea>
-    </div>
-    <div>
 
+    <div class="input-group" style="width: 80%;margin:0 auto 10px">
+        <input type="text" id="articleTitle" placeholder="请输入文章的标题..." class="form-control"
+               style="height:50px; padding-left: 20px;font-size: 18px;font-weight: bold" required>
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit" onclick="postArticle(this)"
+                    style="height:50px;width: 100px;background-color: #4cae4c;color: white;">发布文章</button>
+        </span>
     </div>
+
+    <div class="input-group" style="width: 80%;margin:0px auto">
+        <input type="text" placeholder="请对文章简单介绍..." class="form-control" id="articleDesc"
+               style="height:50px; padding-left: 20px;font-size: 18px;font-weight: bold" maxlength="100" required>
+    </div>
+
+    <div id="editor" style="background-color:white;width: 80%;margin:10px auto;font-size: 18px;"
+         aria-required="true"></div>
 </div>
-
 </body>
 </html>
