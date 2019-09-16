@@ -37,7 +37,6 @@ let pageSize = 10;
 // 选中的导航栏下标
 let selectedSortNavIndex = 0;
 
-
 $(function () {
     // 获取前端默认展示数据
     setHtml();
@@ -84,6 +83,7 @@ $(function () {
             });
         }
     });
+
 });
 
 /**
@@ -101,8 +101,19 @@ function userIsLogin() {
         console.log("用户登录状态：", JSON.stringify(res));
         if (res.type == "success") {
             console.log("用户处于登录状态");
+            $("#avatar-btn").attr("href", "./mine.html");
+
+            let avatar = window.localStorage.getItem("avatar");
+            console.log("头像地址 = " + avatar);
+            if (avatar != null || avatar != undefined) {
+                $("#avatar-img").attr("src", avatar);
+            } else {
+                alert("头像获取失败");
+            }
+
         } else {
             console.log("未登录");
+            $("#avatar-btn").attr("href", "./login.html");
         }
     }, function (res) {
         alert("error");
@@ -167,14 +178,14 @@ function setHtml() {
 
             // 设置分类导航栏
             sortNavBarList = res.data.sortNavBarList;
-            console.log("分类导航栏：", sortNavBarList);
+            // console.log("分类导航栏：", sortNavBarList);
 
             // 设置广告地址
             adInfo = res.data.adInfo;
 
             // 文章列表
             articleList = res.data.articleList;
-            console.log("文章列表", articleList);
+            // console.log("文章列表", articleList);
         }
     })
 }
@@ -228,6 +239,8 @@ function setNavBar() {
  * 设置顶部导航栏按钮
  */
 function setNavBarBtn() {
+
+
     for (let i = 0; i < navBarListBtn.length; i++) {
         let $li = $("<li id='id-nav-btn'></li>");
         $("#bg-nav-btn").append($li);
@@ -330,7 +343,7 @@ function setArticle() {
             "</div>" +
             "<div style='display:flex'>" +
             "<div>" +
-            " <a href='' class='article-readCount'>" +
+            "<a href='' class='article-readCount'>" +
             "阅读数：<span style='color:lightskyblue' id='article-readCount'></span>" +
             "</a>" +
             "</div>" +

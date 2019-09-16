@@ -15,29 +15,33 @@
 </head>
 <body style="background-color: #ccc">
 <div>
-    <div class="btn-group" style="margin: 10px 0 0 10%;">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-            请选择文章标签 <span class="caret"></span>
-        </button>
-        <ul id="articleType" class="dropdown-menu" style="z-index: 99999;"></ul>
-    </div>
+    <div class="input-group" style="width: 80%;margin:10px auto 10px;min-width: 1200px">
+        <div class="btn-group">
+            <button type="button" class="btn btn-success" id="title">请选择文章标签</button>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" style="z-index: 99999;">
+                <div id="articleType" class="label-model"></div>
+            </ul>
+        </div>
 
-    <div class="input-group" style="width: 80%;margin:0 auto 10px">
         <input type="text" id="articleTitle" placeholder="请输入文章的标题..." class="form-control"
                style="height:50px; padding-left: 20px;font-size: 18px;font-weight: bold" required>
         <span class="input-group-btn">
             <button class="btn btn-default" type="submit" onclick="postArticle(this)"
-                    style="height:50px;width: 100px;background-color: #4cae4c;color: white;">发布文章</button>
+                    style="height:50px;margin-top:34px;width: 100px; background-color: #4cae4c;color: white;">发布文章</button>
         </span>
     </div>
 
-    <div class="input-group" style="width: 80%;margin:0px auto">
+    <div class="input-group" style="width: 80%;margin:0px auto;min-width: 1200px;">
         <input type="text" placeholder="请对文章简单介绍..." class="form-control" id="articleDesc"
                style="height:50px; padding-left: 20px;font-size: 18px;font-weight: bold" maxlength="100" required>
     </div>
 
-    <div id="editor" style="background-color:white;width: 80%;margin:10px auto;font-size: 18px;"
+    <div id="editor" style="background-color:white;width: 80%;margin:10px auto;font-size: 18px;min-width: 1200px"
          aria-required="true"></div>
 </div>
 </body>

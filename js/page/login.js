@@ -22,6 +22,7 @@ function loginChange() {
             if (res.type == "success") {
                 window.localStorage.setItem("tokenId",res.data.token.tokenId);
                 window.localStorage.setItem("uid", res.data.token.uid);
+                window.localStorage.setItem("avatar",res.data.token.avatar);
                 $('form').fadeOut(500);
                 $("#accountTitle").text("Welcome");
                 $('.wrapper').addClass('form-success');
