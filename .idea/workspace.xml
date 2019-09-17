@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966080fa-756d-4e8f-843b-1a9955b7f792" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/page/mine.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/page/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/page/write/write.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page/write/write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/page/write.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/page/write.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/page/write.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/mine.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +123,8 @@
       <workItem from="1568122248255" duration="13347000" />
       <workItem from="1568122208743" duration="12342000" />
       <workItem from="1568220714043" duration="17525000" />
-      <workItem from="1568283847858" duration="21425000" />
+      <workItem from="1568283847858" duration="22040000" />
+      <workItem from="1568633117407" duration="23422000" />
     </task>
     <task id="LOCAL-00001" summary="页面动态化">
       <created>1567078850391</created>
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568266257318</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完善动态获取头像及对文章发布功能进行了优化">
+      <created>1568635308341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568635308341</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +208,7 @@
     <MESSAGE value="完成动态筛选文章" />
     <MESSAGE value="完成登录页面" />
     <MESSAGE value="文章发布" />
-    <option name="LAST_COMMIT_MESSAGE" value="文章发布" />
+    <MESSAGE value="完善动态获取头像及对文章发布功能进行了优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善动态获取头像及对文章发布功能进行了优化" />
   </component>
 </project>

@@ -131,7 +131,6 @@ ul {
     min-height: 100%;
 }
 
-
 /**
   分类导航栏模块
  */
@@ -273,4 +272,22 @@ ul {
     display: flex;
     justify-content: space-between;
     line-height: 34px;
+}
+
+.myCenterNav > li {
+    margin: 3px 0;
+    padding: 10px 0;
+    width: 150px;
+}
+
+.myCenterNav > li:hover {
+    padding: 10px;
+    width: 150px;
+    color: white;
+    background-color: red;
+}
+
+.my-active {
+    color: white;
+    background-color: red;
 }

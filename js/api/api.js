@@ -10,3 +10,5 @@ var codeImgUrl = domain + "/sys/code";
 var uType = "/sys/uType";
 var postArticleURL = "/sys/article/post";
 var getArticleLabelURL = "/sys/article/label";
+var myCenterNav = "/sys/front/myCenter";
+var getUserInfoURL = "/sys/user/getUserInfo";

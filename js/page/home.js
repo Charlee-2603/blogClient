@@ -37,6 +37,9 @@ let pageSize = 10;
 // 选中的导航栏下标
 let selectedSortNavIndex = 0;
 
+// 个人中心导航栏下标
+let mineNavIndex = 0;
+
 $(function () {
     // 获取前端默认展示数据
     setHtml();
@@ -101,7 +104,38 @@ function userIsLogin() {
         console.log("用户登录状态：", JSON.stringify(res));
         if (res.type == "success") {
             console.log("用户处于登录状态");
-            $("#avatar-btn").attr("href", "./mine.html");
+
+            $("#avatar-btn").bind("click", function () {
+                //首页内容模块隐藏
+
+                $("#body-model").hide();
+                $("#mime-model").show();
+                // ajax请求
+                http(myCenterNav, "post", true, "", "json", function (res) {
+                    console.log(res);
+                    let personalNavList = res.data;
+                    if (res.type == "success") {
+                        $("#myCenterNav").empty();
+                        $.each(personalNavList, function (i, val) {
+                            let $li = $("<li id='my-li'></li>");
+                            $("#myCenterNav").append($li);
+                            $li.attr("id", "my-li" + i);
+                            if (i == mineNavIndex) {
+                                $li.attr("class", "my-active");
+                            }
+                            $li.text(personalNavList[i].frontName);
+                            $li.on('click', function () {
+                                $("#my-li" + mineNavIndex).attr("class", "");
+                                mineNavIndex = i;
+                                $li.attr("class", "my-active");
+                                getUserInfo();
+                            })
+                        });
+                    }
+                }, function () {
+                    alert("error");
+                })
+            });
 
             let avatar = window.localStorage.getItem("avatar");
             console.log("头像地址 = " + avatar);
@@ -110,7 +144,6 @@ function userIsLogin() {
             } else {
                 alert("头像获取失败");
             }
-
         } else {
             console.log("未登录");
             $("#avatar-btn").attr("href", "./login.html");
@@ -221,6 +254,9 @@ function setNavBar() {
             $li.attr("value", navBarList[i].frontId);
 
             $li.on('click', function () {
+                $("#mime-model").hide();
+                $("#body-model").show();
+
                 $("#id-nav-li" + selectedNavIndex).attr("class", "");
                 $("#id-nav-li" + i).attr("class", "active");
                 navBarId = $li.val();
@@ -239,8 +275,6 @@ function setNavBar() {
  * 设置顶部导航栏按钮
  */
 function setNavBarBtn() {
-
-
     for (let i = 0; i < navBarListBtn.length; i++) {
         let $li = $("<li id='id-nav-btn'></li>");
         $("#bg-nav-btn").append($li);
@@ -393,6 +427,28 @@ function setArticle() {
 }
 
 /**
+ * 获取用户信息
+ */
+function getUserInfo() {
+    let userId = window.localStorage.getItem("uid");
+    let data = {
+        userId: userId
+    };
+    if (userId != null && userId != undefined) {
+        http(getUserInfoURL, "post", true, data, "json", function (res) {
+            alert("success");
+            console.log(res);
+            return;
+        }, function () {
+            alert("error");
+            return;
+        })
+    } else {
+        window.location = "./login.html";
+    }
+}
+
+/**
  * 时间截取值分钟
  * @param time
  * @returns {string}
@@ -404,6 +460,5 @@ function subString(str, key) {
         return str.substring(0, 16);
     } else {
         return str.substring(0, 30) + "...";
-        ;
     }
 }
