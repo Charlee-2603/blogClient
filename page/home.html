@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/date_time_picker/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../css/page/home/home.css">
     <script type="text/javascript" src="../js/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
@@ -41,11 +42,6 @@
         </div>
     </div>
 </div>
-<!--<div style="background-color: #f5f6f7;width: 100%">-->
-<!--    <div style="width: 300px;height: 300px;background-color: #1b6d85;position: fixed;z-index: 999;right: 24%">-->
-<!--        <button>登录</button>-->
-<!--    </div>-->
-<!--</div>-->
 
 <!-- 中间栏·首页-->
 <div id="body-model" class="body-model">
@@ -71,41 +67,52 @@
 <!--个人中心-->
 <div id="mime-model" class="body-model mine" style="display: none">
     <div style="margin-top: 20px;">
-        <ul style="box-shadow: 0px 5px 5px #aaaaaa">
+        <ul style="box-shadow: 0 5px 5px #aaaaaa">
             <div id="myCenterNav" class="myCenterNav" style="background-color: white"></div>
         </ul>
     </div>
-    <div style="width: 100%;margin:23px 0 0 1px;background-color: white;height: 30%;box-shadow: 5px 5px 5px #aaaaaa">
-        <!-- 个人资料 -->
+
+    <!-- 个人资料 -->
+    <div id="myData"
+         style="width: 100%;min-width:1200px;margin:23px 0 0 1px;background-color: white;height: 30%;box-shadow: 5px 5px 5px #aaaaaa;">
         <div>
             <span style="font-size: 23px;line-height: 80px;margin-left: 20px;font-weight: bold">个人资料</span>
-            <div style="display:flex;margin:auto 5%;border-top: 1px solid #CCCCCC">
+            <div style="display:flex;margin:auto 2%;border-top: 1px solid #CCCCCC">
                 <div style="width: 100px;height: 100px;text-align: center">
-                    <img src="http://localhost:8080/image/avatar/feman.jpg"
+                    <img id="userAvatar" src="../images/avatar/def.png"
                          style="border-radius:50%;width: 100px; margin: 15px 0 10px">
                     <a href="javascript:void(0)">修改头像</a>
                 </div>
                 <div style="margin: 15px 0 0 20px;width: 100%;height: 250px">
                     <div style="width: 100%">
                         <div style="display:flex;justify-content: space-between">
-                            <span>昵称：小妹妹</span>
+                            <span>昵称：<span id="userNickname"></span></span>
                             <span><a href="javascript:void(0)">修改资料</a></span>
                         </div>
                         <div>
-                            <ul style="text-align: left">
-                                <li style="padding: 5px 0">实名：<span>九妹</span></li>
-                                <li style="padding: 5px 0">性别：<span>女</span></li>
-                                <li style="padding: 5px 0">地区：<span>中国</span></li>
-                                <li style="padding: 5px 0">生日：<span>1995-09-26</span></li>
-                                <li style="padding: 5px 0">行业：<span>IT服务-系统集成</span></li>
-                                <li style="padding: 5px 0">职位：<span>java程序员</span></li>
-                                <li style="padding: 5px 0">简介：<span>可爱与示例并存</span></li>
+                            <ul id="my-body" style="text-align: left">
+                                <li style="padding: 5px 0">实名：<span id="userActualName"></span></li>
+                                <li style="padding: 5px 0">性别：<span id="userSex"></span></li>
+                                <li style="padding: 5px 0">地区：<span id="userCity"></span></li>
+                                <li style="padding: 5px 0">生日：<span id="userBirthday"></span></li>
+                                <li style="padding: 5px 0">行业：<span id="userIndustry"></span></li>
+                                <li style="padding: 5px 0">职位：<span id="userPosition"></span></li>
+                                <li style="padding: 5px 0">简介：<span id="userSignature"></span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- 我的博客 -->
+    <div id="myBlog" style="margin: 23px 1px;background-color: white;min-height:100%;min-width: 100%"></div>
+
+
+    <!-- 我的分享 -->
+    <div id="myShare" style="margin: 23px;background-color: white;min-height:100%;min-width: 100%">
+        我的分享
     </div>
 </div>
 

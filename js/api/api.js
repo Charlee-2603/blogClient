@@ -12,3 +12,4 @@ var postArticleURL = "/sys/article/post";
 var getArticleLabelURL = "/sys/article/label";
 var myCenterNav = "/sys/front/myCenter";
 var getUserInfoURL = "/sys/user/getUserInfo";
+var getArticleByUserIdURL = "/sys/user/getArticleByUserId";

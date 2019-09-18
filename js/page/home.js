@@ -40,6 +40,12 @@ let selectedSortNavIndex = 0;
 // 个人中心导航栏下标
 let mineNavIndex = 0;
 
+// 个人中心 》 我的博客页码
+let myBlogPageIndex = 1;
+
+// 个人中心 》 我的博客页数大小
+let myBlogPageSize = 10;
+
 $(function () {
     // 获取前端默认展示数据
     setHtml();
@@ -53,7 +59,11 @@ $(function () {
     // 设置中间内容
     setBody();
 
+    mySroll();
 
+});
+
+function mySroll() {
     var height = 50;
 
     $(window).scroll(function () {
@@ -70,8 +80,10 @@ $(function () {
         if (positionValue == 0) {
             // 下拉刷新
             pageIndex++;
+            myBlogPageIndex++;
             setHtml();
             setArticle();
+            getBlogByUserId();
         }
 
         if (scrollTop > height) {
@@ -86,8 +98,7 @@ $(function () {
             });
         }
     });
-
-});
+}
 
 /**
  * 判断用户是否登录
@@ -115,6 +126,7 @@ function userIsLogin() {
                     console.log(res);
                     let personalNavList = res.data;
                     if (res.type == "success") {
+                        getUserInfo();
                         $("#myCenterNav").empty();
                         $.each(personalNavList, function (i, val) {
                             let $li = $("<li id='my-li'></li>");
@@ -126,10 +138,29 @@ function userIsLogin() {
                             $li.text(personalNavList[i].frontName);
                             $li.on('click', function () {
                                 $("#my-li" + mineNavIndex).attr("class", "");
-                                mineNavIndex = i;
                                 $li.attr("class", "my-active");
-                                getUserInfo();
-                            })
+                                mineNavIndex = i;
+                                switch (i) {
+                                    case 0:
+                                        getUserInfo();
+                                        $("#myData").show();
+                                        $("#myBlog").hide();
+                                        $("#myShare").hide();
+                                        break;
+                                    case 1:
+                                        getBlogByUserId();
+                                        $("#myData").hide();
+                                        $("#myBlog").show();
+                                        $("#myShare").hide();
+                                        break;
+                                    case 2:
+                                        $("#myData").hide();
+                                        $("#myBlog").hide();
+                                        $("#myShare").show();
+                                        break;
+                                }
+                            });
+
                         });
                     }
                 }, function () {
@@ -436,12 +467,18 @@ function getUserInfo() {
     };
     if (userId != null && userId != undefined) {
         http(getUserInfoURL, "post", true, data, "json", function (res) {
-            alert("success");
             console.log(res);
-            return;
+            $("#userAvatar").attr("src", res.data.userAvatar);
+            $("#userNickname").text(res.data.userNickname);
+            $("#userActualName").text(res.data.userActualName);
+            $("#userSex").text(res.data.userSex);
+            $("#userCity").text(res.data.userCity);
+            $("#userBirthday").text(res.data.userBirthday);
+            $("#userIndustry").text(res.data.userIndustry);
+            $("#userPosition").text(res.data.userPosition);
+            $("#userSignature").text(res.data.userSignature);
         }, function () {
             alert("error");
-            return;
         })
     } else {
         window.location = "./login.html";
@@ -460,5 +497,66 @@ function subString(str, key) {
         return str.substring(0, 16);
     } else {
         return str.substring(0, 30) + "...";
+    }
+}
+
+
+function getBlogByUserId() {
+    let userId = window.localStorage.getItem("uid");
+    let data = {
+        userId: userId,
+        pageDo: {
+            pageIndex: myBlogPageIndex,
+            pageSize: myBlogPageSize
+        }
+    };
+    if (userId != null && userId != undefined) {
+        http(getArticleByUserIdURL, "post", true, data, "json", function (res) {
+            console.log(res);
+            let articleList = res.data;
+            $.each(articleList, function (i, val) {
+                $md = $("<div style=\"border-bottom: 1px solid #CCCCCC;margin: 10px 20px;padding: 10px 0\">" +
+                    "<div>\n" +
+                    "<input type='hidden' id='articleId'/>" +
+                    "<span style=\"font-size: 20px\"><a id='articleTitle'></a></span>\n" +
+                    "</div>\n" +
+                    "<div style=\"display: flex;justify-content: space-between;margin-top: 10px\">\n" +
+                    "<div>\n" +
+                    "<span id='articleCreateTime'>2019.9.6 12:14:02</span>\n" +
+                    "<span id='articleComment' style=\"padding: 0 10px\"></span>\n" +
+                    "<span id='articleReadNum' style=\"padding: 0 10px\"></span>\n" +
+                    "</div>\n" +
+                    "<div>\n" +
+                    "<a href=\"\" style=\"padding: 0 10px;border-right: 1px solid #CCCCCC\">查看</a>\n" +
+                    "<a href=\"\" style=\"padding: 0 5px;\">删除</a>\n" +
+                    "</div>\n" +
+                    "</div>" +
+                    "</div>");
+
+                $("#myBlog").append($md);
+
+                let dataId = articleList[i].articleId;
+                let dataTitle = articleList[i].articleTitle;
+                let dataCreateTime = articleList[i].articleCreateTime;
+                let dataComment = articleList[i].articleComment;
+                let dataReadNum = articleList[i].articleReadNum;
+
+                $("#articleId").attr("id", "articleId" + dataId);
+                $("#articleTitle").attr("id", "articleTitle" + dataId);
+                $("#articleCreateTime").attr("id", "articleCreateTime" + dataId);
+                $("#articleComment").attr("id", "articleComment" + dataId);
+                $("#articleReadNum").attr("id", "articleReadNum" + dataId);
+
+                $("#articleId" + dataId).attr("value", articleList[i].articleId);
+                $("#articleTitle" + dataId).text(dataTitle);
+                $("#articleCreateTime" + dataId).text(dataCreateTime);
+                $("#articleComment" + dataId).text("评论：" + dataComment);
+                $("#articleReadNum" + dataId).text("阅读次数：" + dataReadNum);
+            })
+        }, function () {
+            alert("error");
+        })
+    } else {
+        window.location = "./home.html";
     }
 }
